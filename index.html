@@ -1,17 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>Portfolio ครูชมพูนุท</title>
-</head>
-<body bgcolor="#00CC99"> 
-<a href="profile.html">ประวัติส่วนตัว</a>
-<a href="education.html">ประวัติการศึกษา</a>
-<a href="award.html">ผลงาน</a>
-<a href="contact.html">ช่องทางการติดต่อ</a>
-<img src="images/12.jpg">
-<p>นางสาวชมพูนุท บุญรอต<br>
-ครูผู้สอนวิชาคอมพิวเตอร์<br>
-โรงเรียนพานทอง</p>
-</body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | หน้าหลัก</title>
 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:#f4f7fb;
+            color:#333;
+        }
+
+        header{
+            background:#1e3a8a;
+            color:white;
+            padding:20px;
+        }
+
+        header h1{
+            text-align:center;
+        }
+
+        nav{
+            margin-top:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#ffd166;
+        }
+
+        .hero{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:50px;
+            padding:60px 10%;
+            flex-wrap:wrap;
+        }
+
+        .hero img{
+            width:250px;
+            height:250px;
+            border-radius:50%;
+            object-fit:cover;
+            border:6px solid #1e3a8a;
+        }
+
+        .hero-text{
+            max-width:500px;
+        }
+
+        .hero-text h2{
+            font-size:38px;
+            color:#1e3a8a;
+            margin-bottom:20px;
+        }
+
+        .hero-text p{
+            font-size:18px;
+            line-height:1.8;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#1e3a8a;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:8px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#274fc7;
+        }
+
+        footer{
+            margin-top:60px;
+            background:#1e3a8a;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+
+            .hero{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            nav a{
+                display:block;
+                margin:10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>MY PORTFOLIO</h1>
+
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="profile.html">ประวัติส่วนตัว</a>
+        <a href="education.html">ประวัติการศึกษา</a>
+        <a href="award.html">ผลงาน</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <img src="images/profile.jpg" alt="รูปโปรไฟล์">
+
+    <div class="hero-text">
+
+        <h2>สวัสดีครับ 👋</h2>
+
+        <p>
+            ยินดีต้อนรับสู่แฟ้มสะสมผลงาน (Portfolio)
+            เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
+            ประวัติการศึกษา ผลงาน และช่องทางการติดต่อ
+            สำหรับใช้ประกอบการศึกษาต่อในระดับมหาวิทยาลัย
+        </p>
+
+        <a href="profile.html" class="btn">
+            เริ่มต้นทำความรู้จัก
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Portfolio | จัดทำโดย ชื่อ-นามสกุล
+    </p>
+
+</footer>
+
+</body>
 </html>
